@@ -1,9 +1,11 @@
+import BigCardsServer from '@/blocks/bigCards/Server'
 import RectCardsServer from '@/blocks/rectCards/Server'
 import { Page } from '@/payload-types'
 import React, { Fragment } from 'react'
 
 const blockComponents = {
     rectcards: RectCardsServer,
+    bigcards: BigCardsServer,
 }
 
 export const RenderBlocks: React.FC<{

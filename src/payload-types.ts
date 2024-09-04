@@ -92,19 +92,37 @@ export interface Page {
   name: string;
   slug: string;
   layout?:
-    | {
-        title: string;
-        cardItems?:
-          | {
-              cardItem: string;
-              cardItemLink: string;
+    | (
+        | {
+            title: string;
+            cardItems?:
+              | {
+                  cardItem: string;
+                  cardItemLink: string;
+                  cardImage: string | Media;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'rectcards';
+          }
+        | {
+            cards: {
+              title: string;
+              items: {
+                item: string;
+                id?: string | null;
+              }[];
+              link: string;
+              linkLabel: string;
               id?: string | null;
-            }[]
-          | null;
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'rectcards';
-      }[]
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'bigcards';
+          }
+      )[]
     | null;
   updatedAt: string;
   createdAt: string;
