@@ -24,6 +24,12 @@ export const RectCards: Block = {
                     type: 'text',
                     required: true,
 
+                },
+                {
+                    name: 'cardImage',
+                    type: 'upload',
+                    relationTo: 'media',
+                    required: true
                 }
             ]
             
