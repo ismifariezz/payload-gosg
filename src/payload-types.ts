@@ -122,6 +122,22 @@ export interface Page {
             blockName?: string | null;
             blockType: 'bigcards';
           }
+        | {
+            title: string;
+            bannerImage: string | Media;
+            carousel?:
+              | {
+                  image: string | Media;
+                  image2: string | Media;
+                  image3: string | Media;
+                  image4: string | Media;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'banner';
+          }
       )[]
     | null;
   updatedAt: string;
