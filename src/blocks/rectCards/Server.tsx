@@ -4,7 +4,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 export default function RectCardsServer({ title, cardItems }) {
     return (
-        <div className="px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-12">
+        <div className="px-4 sm:px-8 md:px-16 py-2 sm:py-12 md:py-12">
         <div className="flex flex-col justify-start items-start gap-10">
             <div className="text-zinc-800 text-3xl font-bold leading-9">{title}</div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
