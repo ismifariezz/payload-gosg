@@ -1,5 +1,6 @@
 import BannerServer from '@/blocks/Banner/Server'
 import BigCardsServer from '@/blocks/bigCards/Server'
+import EventCardsServer from '@/blocks/EventCards/Server'
 import RectCardsServer from '@/blocks/rectCards/Server'
 import { Page } from '@/payload-types'
 import React, { Fragment } from 'react'
@@ -7,7 +8,8 @@ import React, { Fragment } from 'react'
 const blockComponents = {
     rectcards: RectCardsServer,
     bigcards: BigCardsServer,
-    banner: BannerServer
+    banner: BannerServer,
+    eventcards: EventCardsServer,
 }
 
 export const RenderBlocks: React.FC<{

@@ -1,5 +1,6 @@
 import { Banner } from "@/blocks/Banner/schema";
 import { BigCards } from "@/blocks/bigCards/schema";
+import { EventCards } from "@/blocks/EventCards/schema";
 import { RectCards } from "@/blocks/rectCards/schema";
 import { CollectionConfig } from "payload";
 
@@ -28,7 +29,8 @@ export const Pages: CollectionConfig = {
             blocks: [
                 RectCards,
                 BigCards,
-                Banner
+                Banner,
+                EventCards
             ]
         }
     ]

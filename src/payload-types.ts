@@ -138,6 +138,22 @@ export interface Page {
             blockName?: string | null;
             blockType: 'banner';
           }
+        | {
+            title: string;
+            eventCards: {
+              title: string;
+              eventImage: string | Media;
+              dateFrom: string;
+              dateTo: string;
+              eventParticipant?: ('Acara Terhad' | 'Acara Terbuka (Terhad)') | null;
+              eventLocation: string;
+              eventFee?: ('Percuma' | 'Beryuran') | null;
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'eventcards';
+          }
       )[]
     | null;
   updatedAt: string;
