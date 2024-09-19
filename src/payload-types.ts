@@ -154,6 +154,17 @@ export interface Page {
             blockName?: string | null;
             blockType: 'eventcards';
           }
+        | {
+            title: string;
+            infoList: {
+              title: string;
+              subtitle: string;
+              id?: string | null;
+            }[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'infocards';
+          }
       )[]
     | null;
   updatedAt: string;
